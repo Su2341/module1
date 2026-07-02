@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- <video autoplay muted>
+        <source src="Person with a cold.mp4" type="mp4">
+    </video> -->
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="">Logo</a>
+            </div>
+
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="content.html">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <!-- <video src="Person with a cold.mp4" autoplay muted loop></video> -->
+        <section id="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slider1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slider2.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-scrollbar"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="about_us">
+            <div class="about_container">
+                <div class="left" data-aos="fade-right">
+                    <img src="images/about_us.jpg" alt="">
+                </div>
+
+                <div class="right">
+                    <small>About Us</small>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto at minima iure non nulla cum
+                        quaerat laboriosam maiores, sed vel sequi dicta, incidunt ullam dignissimos nostrum nihil quia.
+                        Possimus, pariatur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="service_container">
+                <h1>Why shop with us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio rem reprehenderit praesentium
+                    assumenda, repellendus temporibus dolorum totam cumque distinctio ex veritatis ipsa eligendi,
+                    exercitationem fugit perferendis ratione, quisquam delectus incidunt?</p>
+
+                <div class="service_cards">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-regular fa-truck"></i>
+                        <h2 data-aos="flip-right" data-aos-delay="100">Fast Delivery</h2>
+                        <p>Free shipping to all townships.</p>
+                    </div>
+
+                    <div class="hard" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-shield"></i>
+                        <h2>Secure Payment</h2>
+                        <p>Your payment system is secure with our encrypted system.</p>
+                    </div>
+
+                    <div class="card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>24/7 support</h2>
+                        <p>Our dedicated team is here to help you anytime.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My website. All right reserve.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: { delay: 3000 },
+            speed: 3000,
+            effect: 'fade',
+            //fade, cube, slide, coverflow, flip
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
