@@ -130,7 +130,7 @@ nav {
     padding: 5px;
 }
 
-#product .container .card .details small {
+#product .container .card .details small { 
     font-weight: bold;
     color: var(--gray-color);
 }
